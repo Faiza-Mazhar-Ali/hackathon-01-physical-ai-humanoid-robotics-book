@@ -8,7 +8,7 @@ const config = {
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true, // Improve compatibility with Docusaurus v4
   },
 
   // Production URL
@@ -19,14 +19,13 @@ const config = {
   organizationName: 'Faiza-Mazhar-Ali',
   projectName: 'my-docusaurus',
 
+  // Broken links handling
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
-  // ✅ Correct place for markdown settings (Docusaurus v3+)
+  // Markdown settings (Docusaurus v3+)
   markdown: {
     format: 'mdx',
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
   },
 
   i18n: {
@@ -40,17 +39,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/Faiza-Mazhar-Ali/my-docusaurus/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/Faiza-Mazhar-Ali/my-docusaurus/edit/main/',
-        },
+        blog: false, // Disable blog
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -74,7 +69,6 @@ const config = {
           position: 'left',
           label: 'Book Content',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/Faiza-Mazhar-Ali/my-docusaurus',
           label: 'GitHub',
@@ -88,10 +82,7 @@ const config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Content',
-              to: '/docs/intro',
-            },
+            { label: 'Book Content', to: '/docs/intro' },
           ],
         },
         {
@@ -114,10 +105,6 @@ const config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/Faiza-Mazhar-Ali/my-docusaurus',
