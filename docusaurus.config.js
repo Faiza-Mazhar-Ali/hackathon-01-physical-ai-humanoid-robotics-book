@@ -13,7 +13,7 @@ const config = {
 
   // Production URL
   url: 'https://Faiza-Mazhar-Ali.github.io',
-  baseUrl: '/my-docusaurus/',
+  baseUrl: '/',
 
   // GitHub Pages deployment
   organizationName: 'Faiza-Mazhar-Ali',
