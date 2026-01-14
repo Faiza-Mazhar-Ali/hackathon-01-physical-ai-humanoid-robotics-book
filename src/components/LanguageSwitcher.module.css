@@ -1,0 +1,42 @@
+.languageSwitcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.select {
+  background-color: rgba(30, 41, 59, 0.8); /* Matches --ifm-background-surface-color with transparency */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(96, 165, 250, 0.3); /* Matches the blue accent color */
+  border-radius: 8px;
+  color: #f1f5f9; /* Matches --ifm-hero-text-color */
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.select:hover {
+  background-color: rgba(56, 70, 97, 0.9); /* Slightly lighter blue-gray */
+  border-color: rgba(96, 165, 250, 0.5);
+}
+
+.select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Matches --ifm-color-primary */
+}
+
+@media (max-width: 768px) {
+  .languageSwitcher {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .select {
+    width: 100%;
+  }
+}

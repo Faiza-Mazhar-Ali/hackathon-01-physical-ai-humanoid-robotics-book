@@ -1,0 +1,217 @@
+Starting build test...
+stdout chunk: [INFO] [en] Creating an optimized production build...
+
+stderr chunk: [ERROR] Sidebars file at "C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js" failed to be loaded.
+
+stdout chunk: 
+
+stderr chunk: [ERROR] Loading of version failed for version current
+
+stderr chunk: [ERROR] Error: Unable to build website for locale en.
+    at tryToBuildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:83:15)
+    at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+    ... 4 lines matching cause stack trace ...
+    at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+  [cause]: Error: Docusaurus could not load module at path "C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js"
+  Cause: ParseError: C:\: Unexpected token, expected "from"  
+   C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js:1:12
+      at loadFreshModule (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\moduleUtils.js:36:15)
+      at loadSidebarsFileUnsafe (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:76:54)
+      ... 18 lines matching cause stack trace ...
+      at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+    [cause]: Error: ParseError: C:\: Unexpected token, expected "from"  
+     C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js:1:12
+        at loadFreshModule (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\moduleUtils.js:33:16)
+        at loadSidebarsFileUnsafe (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:76:54)
+        at async loadSidebars (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:87:32)
+        at async doLoadVersion (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\versions\loadVersion.js:83:22)
+        at async loadVersion (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\versions\loadVersion.js:119:16)
+        at async Promise.all (index 0)
+        at async Object.loadContent (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\index.js:152:33)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\plugins\plugins.js:40:23
+        at async Promise.all (index 1)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\plugins\plugins.js:146:25
+        at async loadSite (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\site.js:155:45)
+        at async buildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\buildLocale.js:33:18)
+        at async runBuildLocaleTask (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:98:5)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:79:13
+        at async tryToBuildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:75:9)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+        at async mapAsyncSequential (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24)
+        at async Command.build (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:34:5)
+        at async Promise.all (index 0)
+        at async runCLI (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\cli.js:56:5)
+        at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3
+  }
+}
+
+stdout chunk: [INFO] Docusaurus version: 3.9.2
+Node version: v20.19.6
+
+stdout: [INFO] [en] Creating an optimized production build...
+
+[INFO] Docusaurus version: 3.9.2
+Node version: v20.19.6
+
+stderr: [ERROR] Sidebars file at "C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js" failed to be loaded.
+[ERROR] Loading of version failed for version current
+[ERROR] Error: Unable to build website for locale en.
+    at tryToBuildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:83:15)
+    at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+    ... 4 lines matching cause stack trace ...
+    at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+  [cause]: Error: Docusaurus could not load module at path "C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js"
+  Cause: ParseError: C:\: Unexpected token, expected "from"  
+   C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js:1:12
+      at loadFreshModule (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\moduleUtils.js:36:15)
+      at loadSidebarsFileUnsafe (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:76:54)
+      ... 18 lines matching cause stack trace ...
+      at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+    [cause]: Error: ParseError: C:\: Unexpected token, expected "from"  
+     C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js:1:12
+        at loadFreshModule (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\moduleUtils.js:33:16)
+        at loadSidebarsFileUnsafe (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:76:54)
+        at async loadSidebars (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:87:32)
+        at async doLoadVersion (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\versions\loadVersion.js:83:22)
+        at async loadVersion (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\versions\loadVersion.js:119:16)
+        at async Promise.all (index 0)
+        at async Object.loadContent (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\index.js:152:33)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\plugins\plugins.js:40:23
+        at async Promise.all (index 1)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\plugins\plugins.js:146:25
+        at async loadSite (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\site.js:155:45)
+        at async buildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\buildLocale.js:33:18)
+        at async runBuildLocaleTask (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:98:5)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:79:13
+        at async tryToBuildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:75:9)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+        at async mapAsyncSequential (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24)
+        at async Command.build (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:34:5)
+        at async Promise.all (index 0)
+        at async runCLI (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\cli.js:56:5)
+        at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3
+  }
+}
+
+Error: Error: Command failed: npx docusaurus build
+[ERROR] Sidebars file at "C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js" failed to be loaded.
+[ERROR] Loading of version failed for version current
+[ERROR] Error: Unable to build website for locale en.
+    at tryToBuildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:83:15)
+    at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+    ... 4 lines matching cause stack trace ...
+    at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+  [cause]: Error: Docusaurus could not load module at path "C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js"
+  Cause: ParseError: C:\: Unexpected token, expected "from"  
+   C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js:1:12
+      at loadFreshModule (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\moduleUtils.js:36:15)
+      at loadSidebarsFileUnsafe (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:76:54)
+      ... 18 lines matching cause stack trace ...
+      at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+    [cause]: Error: ParseError: C:\: Unexpected token, expected "from"  
+     C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\sidebars.js:1:12
+        at loadFreshModule (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\moduleUtils.js:33:16)
+        at loadSidebarsFileUnsafe (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:76:54)
+        at async loadSidebars (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\sidebars\index.js:87:32)
+        at async doLoadVersion (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\versions\loadVersion.js:83:22)
+        at async loadVersion (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\versions\loadVersion.js:119:16)
+        at async Promise.all (index 0)
+        at async Object.loadContent (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\plugin-content-docs\lib\index.js:152:33)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\plugins\plugins.js:40:23
+        at async Promise.all (index 1)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\plugins\plugins.js:146:25
+        at async loadSite (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\server\site.js:155:45)
+        at async buildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\buildLocale.js:33:18)
+        at async runBuildLocaleTask (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:98:5)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:79:13
+        at async tryToBuildLocale (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:75:9)
+        at async C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:35:9
+        at async mapAsyncSequential (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24)
+        at async Command.build (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\build\build.js:34:5)
+        at async Promise.all (index 0)
+        at async runCLI (C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\core\lib\commands\cli.js:56:5)
+        at async file:///C:/Users/Ali/OneDrive/Desktop/hackathon-01/my-docusaurus/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3
+  }
+}
+
+Starting build test...
+stdout chunk: [INFO] [en] Creating an optimized production build...
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled with some errors in 4.80s
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled with some errors in 29.23s
+
+stderr chunk: [ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+stdout: [INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled with some errors in 4.80s
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled with some errors in 29.23s
+
+stderr: [ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+Error: Error: Command failed: npx docusaurus build
+[ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+Starting build test...
+stdout chunk: [INFO] [en] Creating an optimized production build...
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled with some errors in 4.97s
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled with some errors in 37.09s
+
+stderr chunk: [ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+stdout: [INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled with some errors in 4.97s
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled with some errors in 37.09s
+
+stderr: [ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+Error: Error: Command failed: npx docusaurus build
+[ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+Starting build test...
+stdout chunk: [INFO] [en] Creating an optimized production build...
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled with some errors in 4.79s
+
+stdout chunk: [90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled with some errors in 59.74s
+
+stderr chunk: [ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+stdout: [INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mℹ[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Server: Compiled with some errors in 4.79s
+[90m[[90mwebpackbar[90m][39m [32m✔[39m Client: Compiled with some errors in 59.74s
+
+stderr: [ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+
+Error: Error: Command failed: npx docusaurus build
+[ERROR] Client bundle compiled with errors therefore further build is impossible.
+Module not found: Error: Can't resolve '@theme/NavbarItem/DefaultNavbarItem/Desktop' in 'C:\Users\Ali\OneDrive\Desktop\hackathon-01\my-docusaurus\node_modules\@docusaurus\theme-classic\lib\theme\NavbarItem\DefaultNavbarItem'
+

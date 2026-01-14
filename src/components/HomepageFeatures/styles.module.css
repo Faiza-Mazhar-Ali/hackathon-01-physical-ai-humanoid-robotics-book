@@ -1,0 +1,305 @@
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robotImage {
+  width: 100%;
+  height: 300px;
+  background:
+    radial-gradient(circle at center, rgba(15, 23, 42, 0.7) 0%, rgba(30, 41, 59, 0.9) 100%),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.robotImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    /* Circuit board pattern */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 5px,
+      rgba(59, 130, 246, 0.05) 5px,
+      rgba(59, 130, 246, 0.05) 10px
+    ),
+    /* Grid pattern */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 10px,
+      rgba(96, 165, 250, 0.05) 10px,
+      rgba(96, 165, 250, 0.05) 20px
+    );
+}
+
+.robotImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Animated grid of dots representing neural networks */
+  background:
+    radial-gradient(circle, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: float 30s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-30px, -30px) rotate(360deg);
+  }
+}
+
+.robotSilhouette {
+  position: relative;
+  z-index: 2;
+  width: 160px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(10deg) rotateY(-5deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.robotSilhouette:hover {
+  transform: rotateX(10deg) rotateY(5deg) scale(1.05);
+}
+
+/* Robot head with AI elements */
+.robotSilhouette::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background:
+    /* Main head shape */
+    radial-gradient(circle at center, rgba(96, 165, 250, 0.2) 0%, rgba(30, 64, 175, 0.3) 70%, transparent 71%),
+    /* AI processing core */
+    radial-gradient(circle at center, rgba(59, 130, 246, 0.8) 0%, rgba(37, 99, 235, 0.5) 30%, transparent 70%),
+    /* Circuit pattern */
+    linear-gradient(90deg, transparent 48%, rgba(59, 130, 246, 0.3) 48%, rgba(59, 130, 246, 0.3) 52%, transparent 52%),
+    linear-gradient(0deg, transparent 48%, rgba(59, 130, 246, 0.3) 48%, rgba(59, 130, 246, 0.3) 52%, transparent 52%);
+  background-blend-mode: overlay, normal, overlay, overlay;
+  border-radius: 40px 40px 30px 30px;
+  z-index: 1;
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 0.4),
+    0 10px 20px rgba(0, 0, 0, 0.3),
+    inset 0 -5px 15px rgba(0, 0, 0, 0.2),
+    inset 0 5px 10px rgba(255, 255, 255, 0.1);
+  transform: translateZ(20px);
+}
+
+/* Robot body with circuit patterns */
+.robotSilhouette::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 100px;
+  background:
+    /* Main body */
+    linear-gradient(135deg, rgba(30, 64, 175, 0.3) 0%, rgba(59, 130, 246, 0.2) 100%),
+    /* Circuit lines */
+    linear-gradient(90deg, transparent 45%, rgba(59, 130, 246, 0.4) 45%, rgba(59, 130, 246, 0.4) 55%, transparent 55%),
+    linear-gradient(0deg, transparent 45%, rgba(59, 130, 246, 0.4) 45%, rgba(59, 130, 246, 0.4) 55%, transparent 55%),
+    /* Horizontal circuit lines */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 8px,
+      rgba(59, 130, 246, 0.3) 8px,
+      rgba(59, 130, 246, 0.3) 10px
+    );
+  border-radius: 10px;
+  z-index: 2;
+  top: 70px;
+  box-shadow:
+    0 0 15px rgba(59, 130, 246, 0.3),
+    0 10px 20px rgba(0, 0, 0, 0.3),
+    inset 0 -5px 10px rgba(0, 0, 0, 0.2),
+    inset 0 5px 5px rgba(255, 255, 255, 0.1);
+  transform: translateZ(15px);
+}
+
+/* Robot arms */
+.robotArmLeft, .robotArmRight {
+  position: absolute;
+  width: 15px;
+  height: 60px;
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(96, 165, 250, 0.4) 100%),
+    linear-gradient(to right, rgba(59, 130, 246, 0.3), rgba(96, 165, 250, 0.4));
+  border-radius: 8px;
+  z-index: 1;
+  top: 80px;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.2),
+    inset 0 -3px 5px rgba(0, 0, 0, 0.2),
+    inset 0 3px 3px rgba(255, 255, 255, 0.1);
+}
+
+.robotArmLeft {
+  left: 25px;
+  transform: rotate(-20deg) translateZ(10px);
+}
+
+.robotArmRight {
+  right: 25px;
+  transform: rotate(20deg) translateZ(10px);
+}
+
+/* Robot legs */
+.robotLegLeft, .robotLegRight {
+  position: absolute;
+  width: 15px;
+  height: 60px;
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(96, 165, 250, 0.4) 100%),
+    linear-gradient(to right, rgba(59, 130, 246, 0.3), rgba(96, 165, 250, 0.4));
+  border-radius: 8px 8px 0 0;
+  z-index: 1;
+  top: 170px;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.2),
+    inset 0 -3px 5px rgba(0, 0, 0, 0.2),
+    inset 0 3px 3px rgba(255, 255, 255, 0.1);
+}
+
+.robotLegLeft {
+  left: 55px;
+  transform: translateZ(10px);
+}
+
+.robotLegRight {
+  right: 55px;
+  transform: translateZ(10px);
+}
+
+/* AI brain pattern inside head */
+.robotBrain {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 45px;
+  left: 60px;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.8) 1px, transparent 2px),
+    radial-gradient(circle at 80% 20%, rgba(96, 165, 250, 0.8) 1px, transparent 2px),
+    radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.8) 1px, transparent 2px),
+    radial-gradient(circle at 20% 80%, rgba(96, 165, 250, 0.8) 1px, transparent 2px),
+    radial-gradient(circle at 80% 80%, rgba(96, 165, 250, 0.8) 1px, transparent 2px);
+  background-size: 100% 100%;
+  opacity: 0.8;
+  animation: pulse 2s infinite alternate;
+  transform: translateZ(25px);
+  filter: drop-shadow(0 0 5px rgba(96, 165, 250, 0.7));
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(1) translateZ(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1) translateZ(25px);
+  }
+}
+
+/* 3D reflection effect on robot parts */
+.robotReflection {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) rotateX(90deg) translateZ(-20px);
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: var(--ifm-color-secondary);
+}
+
+@media (max-width: 996px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .robotImage {
+    height: 200px;
+  }
+}
