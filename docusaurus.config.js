@@ -70,7 +70,7 @@ const config = {
           label: 'Book Content',
         },
         {
-          href: 'https://github.com/Faiza-Mazhar-Ali/my-docusaurus',
+          href: 'https://github.com/Faiza-Mazhar-Ali',
           label: 'GitHub',
           position: 'right',
         },
@@ -107,7 +107,7 @@ const config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/Faiza-Mazhar-Ali/my-docusaurus',
+              href: 'https://github.com/Faiza-Mazhar-Ali',
             },
           ],
         },
